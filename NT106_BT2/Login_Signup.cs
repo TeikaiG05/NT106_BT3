@@ -281,11 +281,14 @@ namespace NT106_BT2
             //Admin
             if (email=="admin"&&password=="admin")
             {
-                MessageBox.Show("Hello admin", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
-                Dashboard mainForm = new Dashboard();
-                mainForm.ShowDialog();
-                this.Close();
+                if (email == "admin" && password == "admin")
+                {
+                    MessageBox.Show("Hello admin", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    Dashboard mainForm = new Dashboard("Admin", "User", DateTime.Now.ToString("yyyy-MM-dd"), "Other", "admin@localhost");
+                    mainForm.ShowDialog();
+                    this.Close();
+                }
             }
             // Kiểm tra email hợp lệ
             if (!IsValidEmail(email))
@@ -317,11 +320,29 @@ namespace NT106_BT2
                         int count = (int)cmd.ExecuteScalar();
                         if (count > 0)
                         {
-                            MessageBox.Show("Login Successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            this.Hide();
-                            Dashboard mainForm = new Dashboard();
-                            mainForm.ShowDialog();
-                            this.Close();
+                            // Lấy thông tin người dùng từ database
+                            string infoSql = "SELECT Firstname, Surname, Birthday, Gender, Email FROM Users WHERE Email = @Email";
+                            using (SqlCommand infoCmd = new SqlCommand(infoSql, conn))
+                            {
+                                infoCmd.Parameters.AddWithValue("@Email", email);
+                                using (SqlDataReader reader = infoCmd.ExecuteReader())
+                                {
+                                    if (reader.Read())
+                                    {
+                                        string firstname = reader["Firstname"].ToString();
+                                        string surname = reader["Surname"].ToString();
+                                        string birthday = reader["Birthday"].ToString();
+                                        string gender = reader["Gender"].ToString();
+                                        string userEmail = reader["Email"].ToString();
+
+                                        MessageBox.Show("Login Successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        this.Hide();
+                                        Dashboard mainForm = new Dashboard(firstname, surname, birthday, gender, userEmail);
+                                        mainForm.ShowDialog();
+                                        this.Close();
+                                    }
+                                }
+                            }
                         }
                         else
                         {
