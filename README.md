@@ -71,4 +71,5 @@
 <p align="center">
   <img src="NT106_BT2/Resources/Dashboard.png" alt="Dashboard UI" width="600px"/>
 </p>
+---
 ✨ *Made by Group13_NT106.Q14 | NT106 - BT3*
