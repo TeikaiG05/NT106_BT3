@@ -55,5 +55,20 @@
 
 ## 🔀 Branches 
 ---
+## 📸 Giao diện ứng dụng
 
+### 🔑 Đăng nhập (Login)
+<p align="center">
+  <img src="NT106_BT2/Resources/Login.png" alt="Login UI" width="600px"/>
+</p>
+
+### 📝 Đăng ký (Signup)
+<p align="center">
+  <img src="NT106_BT2/Resources/Signup.png" alt="Signup UI" width="600px"/>
+</p>
+
+### 📊 Dashboard
+<p align="center">
+  <img src="NT106_BT2/Resources/Dashboard.png" alt="Dashboard UI" width="600px"/>
+</p>
 ✨ *Made by Group13_NT106.Q14 | NT106 - BT3*
