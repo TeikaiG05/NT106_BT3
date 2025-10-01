@@ -40,15 +40,15 @@
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.Close_profile = new Guna.UI2.WinForms.Guna2Button();
             this.pn_profile = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.cAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.cBirthday = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.cName = new System.Windows.Forms.Label();
-            this.cEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cBirthday = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2ShadowPanel1.SuspendLayout();
             this.pn_profile.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cAvatar)).BeginInit();
             this.guna2ShadowPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ShadowPanel1
@@ -222,7 +222,7 @@
             this.Close_profile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Close_profile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Close_profile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Close_profile.FillColor = System.Drawing.Color.White;
+            this.Close_profile.FillColor = System.Drawing.Color.Orchid;
             this.Close_profile.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Close_profile.ForeColor = System.Drawing.Color.Black;
             this.Close_profile.Location = new System.Drawing.Point(702, 14);
@@ -238,48 +238,35 @@
             this.pn_profile.Controls.Add(this.cBirthday);
             this.pn_profile.Controls.Add(this.cEmail);
             this.pn_profile.Controls.Add(this.guna2ShadowPanel2);
-            this.pn_profile.FillColor = System.Drawing.Color.White;
+            this.pn_profile.FillColor = System.Drawing.Color.Orchid;
             this.pn_profile.Location = new System.Drawing.Point(207, 158);
             this.pn_profile.Name = "pn_profile";
             this.pn_profile.ShadowColor = System.Drawing.Color.Black;
             this.pn_profile.Size = new System.Drawing.Size(755, 435);
             this.pn_profile.TabIndex = 8;
             // 
-            // cAvatar
+            // cBirthday
             // 
-            this.cAvatar.Image = global::NT106_BT2.Properties.Resources.avatar_anh_meo_cute_3;
-            this.cAvatar.ImageRotate = 0F;
-            this.cAvatar.Location = new System.Drawing.Point(26, 20);
-            this.cAvatar.Name = "cAvatar";
-            this.cAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.cAvatar.Size = new System.Drawing.Size(103, 97);
-            this.cAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cAvatar.TabIndex = 8;
-            this.cAvatar.TabStop = false;
-            // 
-            // guna2ShadowPanel2
-            // 
-            this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel2.Controls.Add(this.cName);
-            this.guna2ShadowPanel2.Controls.Add(this.cAvatar);
-            this.guna2ShadowPanel2.Controls.Add(this.Close_profile);
-            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
-            this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(752, 135);
-            this.guna2ShadowPanel2.TabIndex = 9;
-            // 
-            // cName
-            // 
-            this.cName.AutoSize = true;
-            this.cName.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cName.Location = new System.Drawing.Point(135, 89);
-            this.cName.Name = "cName";
-            this.cName.Size = new System.Drawing.Size(95, 21);
-            this.cName.TabIndex = 9;
-            this.cName.Text = "Kiệt Phùng";
-            this.cName.Click += new System.EventHandler(this.cName_Click);
+            this.cBirthday.Animated = true;
+            this.cBirthday.BorderRadius = 8;
+            this.cBirthday.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cBirthday.DefaultText = "";
+            this.cBirthday.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.cBirthday.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.cBirthday.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cBirthday.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cBirthday.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.cBirthday.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cBirthday.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cBirthday.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cBirthday.IconLeft = global::NT106_BT2.Properties.Resources.icons8_date_of_birth_32;
+            this.cBirthday.Location = new System.Drawing.Point(68, 235);
+            this.cBirthday.Name = "cBirthday";
+            this.cBirthday.PlaceholderText = "Birthday";
+            this.cBirthday.ReadOnly = true;
+            this.cBirthday.SelectedText = "";
+            this.cBirthday.Size = new System.Drawing.Size(162, 36);
+            this.cBirthday.TabIndex = 14;
             // 
             // cEmail
             // 
@@ -305,28 +292,41 @@
             this.cEmail.TabIndex = 13;
             this.cEmail.TextChanged += new System.EventHandler(this.cEmail_TextChanged);
             // 
-            // cBirthday
+            // guna2ShadowPanel2
             // 
-            this.cBirthday.Animated = true;
-            this.cBirthday.BorderRadius = 8;
-            this.cBirthday.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.cBirthday.DefaultText = "";
-            this.cBirthday.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.cBirthday.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.cBirthday.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cBirthday.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cBirthday.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.cBirthday.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cBirthday.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cBirthday.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cBirthday.IconLeft = global::NT106_BT2.Properties.Resources.icons8_date_of_birth_32;
-            this.cBirthday.Location = new System.Drawing.Point(68, 235);
-            this.cBirthday.Name = "cBirthday";
-            this.cBirthday.PlaceholderText = "Birthday";
-            this.cBirthday.ReadOnly = true;
-            this.cBirthday.SelectedText = "";
-            this.cBirthday.Size = new System.Drawing.Size(162, 36);
-            this.cBirthday.TabIndex = 14;
+            this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel2.Controls.Add(this.cName);
+            this.guna2ShadowPanel2.Controls.Add(this.cAvatar);
+            this.guna2ShadowPanel2.Controls.Add(this.Close_profile);
+            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.Orchid;
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
+            this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(752, 135);
+            this.guna2ShadowPanel2.TabIndex = 9;
+            // 
+            // cName
+            // 
+            this.cName.AutoSize = true;
+            this.cName.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cName.Location = new System.Drawing.Point(135, 89);
+            this.cName.Name = "cName";
+            this.cName.Size = new System.Drawing.Size(95, 21);
+            this.cName.TabIndex = 9;
+            this.cName.Text = "Kiệt Phùng";
+            this.cName.Click += new System.EventHandler(this.cName_Click);
+            // 
+            // cAvatar
+            // 
+            this.cAvatar.Image = global::NT106_BT2.Properties.Resources.avatar_anh_meo_cute_3;
+            this.cAvatar.ImageRotate = 0F;
+            this.cAvatar.Location = new System.Drawing.Point(26, 20);
+            this.cAvatar.Name = "cAvatar";
+            this.cAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.cAvatar.Size = new System.Drawing.Size(103, 97);
+            this.cAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cAvatar.TabIndex = 8;
+            this.cAvatar.TabStop = false;
             // 
             // Dashboard
             // 
@@ -342,9 +342,9 @@
             this.Text = " ";
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.pn_profile.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cAvatar)).EndInit();
             this.guna2ShadowPanel2.ResumeLayout(false);
             this.guna2ShadowPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cAvatar)).EndInit();
             this.ResumeLayout(false);
 
         }
