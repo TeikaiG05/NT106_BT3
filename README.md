@@ -5,7 +5,7 @@
 **Môn học:** Lập trình mạng căn bản <br>
 **Mã môn học:** NT106.Q14 <br>
 **Nhóm:** 13 <br>
-**Giảng viên hướng dẫn:** Lê Minh Khánh Hội
+**Bài tập:** Exercise2.2.pdf
 
 ---
 
@@ -53,7 +53,8 @@
 
 ---
 
-## 🔀 Branches 
+## 🔀 Branches
+...
 ---
 ## 📸 Giao diện ứng dụng
 
@@ -71,5 +72,5 @@
 <p align="center">
   <img src="NT106_BT2/Resources/Dashboard.png" alt="Dashboard UI" width="600px"/>
 </p>
----
+<br>
 ✨ *Made by Group13_NT106.Q14 | NT106 - BT3*
